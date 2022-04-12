@@ -1,3 +1,5 @@
+@import '_menu.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -37,9 +39,9 @@ header {
         justify-content: center;
         align-items: center;
 
-        .fas fa-map-marker-alt {
+        //.fas fa-map-marker-alt {
 
-        }
+        //}
 
         input {
             font-weight: bolder;
@@ -80,9 +82,9 @@ header {
         text-align: center;
     }
   
-    button {
+    //button {
   
-    }
+    //}
   }
   
 .fonction-section {
@@ -125,16 +127,16 @@ header {
             margin-left: -55px;
         }
 
-        .step {
+        //.step {
             
-          i {
+          //i {
             
-          }
+          //}
   
-          p {
+          //p {
   
-          }
-        }
+          //}
+        //}
       }
     }                  
 }
@@ -204,9 +206,9 @@ header {
       li {
         padding-left: 20px;
         padding-bottom: 10px;
-        span {
+        //span {
   
-        }
+        //}
 
       }
     }

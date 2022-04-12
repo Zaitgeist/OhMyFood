@@ -1,3 +1,61 @@
+.menu-wrapper {
+  background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-section {
+  min-width: 50%;
+  width: 400px;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  margin-top: 150px;
+}
+
+.menu-section .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.menu-section .menu-container .menu-type {
+  margin-right: 180px;
+}
+
+.menu-section .menu-container .menu-card {
+  min-width: 350px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 20px;
+  padding: 20px 0px;
+  -webkit-box-shadow: 0 0 10px  #b8b5b5;
+          box-shadow: 0 0 10px  #b8b5b5;
+  background-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;

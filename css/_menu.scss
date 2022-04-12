@@ -1,0 +1,55 @@
+.menu-wrapper {
+  background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  display:flex;
+  justify-content: center;
+}
+
+.menu-section {
+  min-width: 50%;
+  width: 400px;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  margin-top: 150px;
+
+  //.menu-title {
+
+  //}
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .menu-type {
+      margin-right: 180px;
+    }
+
+    .menu-card {
+      min-width: 350px;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 20px;
+      padding: 20px 0px;
+      box-shadow: 0 0 10px  #b8b5b5;
+      background-color: #ffffff;
+
+     // .menu-plat {
+
+      //}
+
+      //.menu-details {
+
+     // }
+
+     // .price {
+
+      }
+    //}
+  }
+}
