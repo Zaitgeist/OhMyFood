@@ -1,0 +1,25 @@
+.description-section {
+    width: 50%;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 ;
+    gap: 20px;
+    background-color: #f6f6f6;
+
+    h1 {
+        text-align: center;
+    }
+  
+    p {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+  
+    //button {
+  
+    //}
+  }
+  

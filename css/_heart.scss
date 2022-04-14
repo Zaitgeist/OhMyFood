@@ -1,0 +1,12 @@
+.heart {
+    position: absolute;
+    font-size: 25px;
+    bottom: 30px;
+    right: 20px;
+  }
+  .heart:hover {
+    -webkit-background-clip: text;
+    font-weight: 900;
+    background-image: linear-gradient(180deg, rgba(231,113,218,1) 0%, rgba(162,91,220,1) 100%);
+    -webkit-text-fill-color: transparent;
+  }

@@ -1,0 +1,29 @@
+.footer {
+    background: #353535;
+    padding-bottom: 20px; 
+
+  .footer-logo {
+  filter: invert(100);
+
+  img {
+      padding: 20px 0 15px 20px;
+      height: 1rem;
+  }
+
+    
+  }
+
+  ul.footer-detail {
+    color: #fff;
+    li {
+      list-style: none;
+      padding-left: 20px;
+      padding-bottom: 10px;
+
+      i {
+      margin-right: 20px;
+      }
+      
+      }
+    }
+ }
