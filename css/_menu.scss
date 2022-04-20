@@ -31,6 +31,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    
 
     .menu-type {
      font-weight: 400;
@@ -57,6 +58,11 @@
       box-shadow: 0 0 10px  #b8b5b5;
       background-color: #ffffff;
       display: flex;
+      opacity: 0;
+      animation-name: slideup;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
     }
 
     //.menu-card:hover {
@@ -76,6 +82,25 @@
       padding-top: 35px;
     }
     
+    .menu-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #99e2d0;
+    cursor: pointer;
+    width: 60px;
+    opacity: 1;
+    border-radius: 0 15px 15px 0;
+    }
+
+    .check {
+     font-size: 13px;
+     color: #99e2d0;
+     background: #fff;
+	   padding: 4px;
+	   border-radius: 100%;
+    }
+
      // .menu-plat {
 
       //}
@@ -86,7 +111,17 @@
 
      // .price {
 
-    
+      @keyframes slideup {
+
+        from {
+          opacity: 0;
+          transform: translate3d(0, -20%, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
     //}
   }
 }

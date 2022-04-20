@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -14,12 +19,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+header .arrow {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+header .arrow:hover {
+  cursor: pointer;
 }
 
 header .logo img {
-  width: 150px;
-  height: 35px;
-  padding: 10px 0px;
+  width: 170px;
+  height: 30px;
+  padding: 5px 0px;
 }
 
 .container-global {
@@ -153,6 +169,15 @@ header .logo img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .menu-section .menu-container .menu-details {
@@ -170,6 +195,57 @@ header .logo img {
   margin-left: auto;
   padding-right: 15px;
   padding-top: 35px;
+}
+
+.menu-section .menu-container .menu-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #99e2d0;
+  cursor: pointer;
+  width: 60px;
+  opacity: 1;
+  border-radius: 0 15px 15px 0;
+}
+
+.menu-section .menu-container .check {
+  font-size: 13px;
+  color: #99e2d0;
+  background: #fff;
+  padding: 4px;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 .restaurant-section {

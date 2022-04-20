@@ -3,13 +3,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      top: 15px;
+      left: 25px;
+    }
+
+    .arrow:hover {
+      cursor: pointer;
+    }
+
 
     .logo {
     
       img {
-        width: 150px;
-        height: 35px;
-        padding: 10px 0px;
+        width: 170px;
+        height: 30px;
+        padding: 5px 0px;
       }
-    }
+  }
 }
