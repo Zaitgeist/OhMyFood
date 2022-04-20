@@ -1,0 +1,33 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    animation: loader 2000ms 3s forwards;
+  
+    i {
+      font-size: 100px;
+      animation: spin 3s ease;
+    }
+  
+  }
+  
+  
+  @keyframes loader {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes spin {
+   to {
+     transform: rotate(720deg)
+   }
+  }
