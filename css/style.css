@@ -91,8 +91,24 @@ header .logo img {
   min-width: 50%;
   width: 400px;
   background-color: #f6f6f6;
-  border-radius: 50px 50px 0 0;
+  border-radius: 40px 40px 0 0;
   margin-top: 150px;
+}
+
+.menu-section .menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.menu-section .heart-menu {
+  font-size: 20px;
+  padding-right: 30px;
 }
 
 .menu-section .menu-container {
@@ -110,12 +126,37 @@ header .logo img {
 }
 
 .menu-section .menu-container .menu-type {
-  margin-right: 180px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 30px;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.menu-section .menu-container .menu-type::after {
+  content: "";
+  top: 25px;
+  left: 20px;
+  height: 5px;
+  width: 50px;
+  background-color: #99e2d0;
+  position: absolute;
 }
 
 .menu-section .menu-container .menu-card {
   min-width: 350px;
   width: 80%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px  #b8b5b5;
+          box-shadow: 0 0 10px  #b8b5b5;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-section .menu-container .menu-details {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,13 +164,12 @@ header .logo img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-radius: 20px;
-  padding: 20px 0px;
-  -webkit-box-shadow: 0 0 10px  #b8b5b5;
-          box-shadow: 0 0 10px  #b8b5b5;
-  background-color: #ffffff;
+}
+
+.menu-section .menu-container .price {
+  margin-left: auto;
+  padding-right: 15px;
+  padding-top: 35px;
 }
 
 .restaurant-section {
@@ -353,14 +393,15 @@ button {
   color: #1b9779;
 }
 
-.heart {
+.heart-card {
   position: absolute;
   font-size: 25px;
   bottom: 30px;
   right: 20px;
 }
 
-.heart:hover {
+.heart-card:hover,
+.heart-menu:hover {
   -webkit-background-clip: text;
   font-weight: 900;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
