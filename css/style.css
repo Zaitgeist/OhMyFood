@@ -170,14 +170,10 @@ header .logo img {
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation: slideup 1s;
+          animation: slideup 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .menu-section .menu-container .menu-details {
@@ -210,7 +206,7 @@ header .logo img {
   background: #99e2d0;
   cursor: pointer;
   width: 60px;
-  opacity: 1;
+  opacity: 0;
   border-radius: 0 15px 15px 0;
 }
 
@@ -225,8 +221,8 @@ header .logo img {
 @-webkit-keyframes slideup {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
   }
   to {
     opacity: 1;
@@ -238,14 +234,74 @@ header .logo img {
 @keyframes slideup {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
+}
+
+.menu-section .menu-container .menu-card:nth-child(1n) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(2n) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(3n) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(4n) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(5n) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(6n) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(7n) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(8n) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(9n) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(10n) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(11n) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(12n) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
 .restaurant-section {
