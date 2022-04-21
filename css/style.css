@@ -28,25 +28,25 @@ a {
 }
 
 .loader i {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
+  background-image: linear-gradient(180deg, #e771da 0%, #a25bdc 100%);
   font-size: 100px;
   -webkit-animation: spin 3s ease;
           animation: spin 3s ease;
 }
 
 @-webkit-keyframes loader {
-  from {
-    opacity: 1;
-  }
   to {
+    z-index: -1;
     opacity: 0;
   }
 }
 
 @keyframes loader {
-  from {
-    opacity: 1;
-  }
   to {
+    z-index: -1;
     opacity: 0;
   }
 }
@@ -600,5 +600,25 @@ button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
   background-image: linear-gradient(180deg, #e771da 0%, #a25bdc 100%);
   -webkit-text-fill-color: transparent;
+  -webkit-animation: fill 1000ms ease-in forwards;
+          animation: fill 1000ms ease-in forwards;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
