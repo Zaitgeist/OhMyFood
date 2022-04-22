@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css2?family=roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +9,14 @@
 a {
     text-decoration: none;
 	color: inherit;
+}
+
+h1 {
+ font-family: shrikhand;
+}
+
+h2,
+h3,
+p {
+    font-family: roboto;
 }

@@ -1,5 +1,5 @@
 .menu-wrapper {
-  background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -33,19 +33,21 @@
     gap: 20px;
 
     .menu-type {
-     font-weight: 400;
+     font-size: 16px;
+     font-weight: 300;
      position: relative;
      margin-top: 30px;
+     margin-bottom: 15px;
      margin-right: auto;
-     padding-left: 20px;
+     padding-left: 15px;
     }
 
     .menu-type::after {
       content: "";
       top: 25px;
-      left: 20px;
-      height: 5px;
-      width: 50px;
+      left: 15px;
+      height: 3px;
+      width: 40px;
       background-color: #99e2d0;
       position: absolute;
     }
@@ -61,6 +63,7 @@
       animation:slideup 1s;
       animation-fill-mode: both;
       overflow: hidden;
+      white-space: nowrap; 
       
       @for $i from 1 through 12 {
         &:nth-child(#{$i}n) {
@@ -76,12 +79,27 @@
       padding: 10px;
       display: flex;
       flex-direction: column;
+      gap: 5px;
+      overflow: hidden;
+
+      h3 {
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
 
     .price {
       margin-left: auto;
       padding-right: 15px;
       padding-top: 35px;
+      font-weight: bold;
+      font-size: 14px;
     }
     
     .menu-select {
@@ -111,6 +129,10 @@
       animation:check 400ms linear forwards;
     }
   }
+
+    .order-btn {
+      margin: 30px 0 70px 0;
+    }
      // .menu-plat {
 
       //}

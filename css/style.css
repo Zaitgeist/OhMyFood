@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,16 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1 {
+  font-family: shrikhand;
+}
+
+h2,
+h3,
+p {
+  font-family: roboto;
 }
 
 .loader {
@@ -148,7 +160,7 @@ header .logo img {
 }
 
 .menu-wrapper {
-  background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -199,19 +211,21 @@ header .logo img {
 }
 
 .menu-section .menu-container .menu-type {
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   position: relative;
   margin-top: 30px;
+  margin-bottom: 15px;
   margin-right: auto;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .menu-section .menu-container .menu-type::after {
   content: "";
   top: 25px;
-  left: 20px;
-  height: 5px;
-  width: 50px;
+  left: 15px;
+  height: 3px;
+  width: 40px;
   background-color: #99e2d0;
   position: absolute;
 }
@@ -232,6 +246,7 @@ header .logo img {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu-section .menu-container .menu-card:nth-child(1n) {
@@ -303,12 +318,28 @@ header .logo img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.menu-section .menu-container .menu-card .menu-details h3 {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-section .menu-container .menu-card .menu-details p {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-section .menu-container .menu-card .price {
   margin-left: auto;
   padding-right: 15px;
   padding-top: 35px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .menu-section .menu-container .menu-card .menu-select {
@@ -347,6 +378,10 @@ header .logo img {
 .menu-section .menu-container .menu-card:hover .check {
   -webkit-animation: check 400ms linear forwards;
           animation: check 400ms linear forwards;
+}
+
+.menu-section .menu-container .order-btn {
+  margin: 30px 0 70px 0;
 }
 
 @-webkit-keyframes slideup {
@@ -567,6 +602,7 @@ button {
 }
 
 .description-section h1 {
+  font-family: roboto;
   text-align: center;
 }
 
