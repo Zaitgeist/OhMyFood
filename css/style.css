@@ -231,9 +231,70 @@ header .logo img {
           animation: slideup 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  overflow: hidden;
 }
 
-.menu-section .menu-container .menu-details {
+.menu-section .menu-container .menu-card:nth-child(1n) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(2n) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(3n) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(4n) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(5n) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(6n) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(7n) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(8n) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(9n) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(10n) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(11n) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.menu-section .menu-container .menu-card:nth-child(12n) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.menu-section .menu-container .menu-card .menu-details {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,13 +305,13 @@ header .logo img {
           flex-direction: column;
 }
 
-.menu-section .menu-container .price {
+.menu-section .menu-container .menu-card .price {
   margin-left: auto;
   padding-right: 15px;
   padding-top: 35px;
 }
 
-.menu-section .menu-container .menu-select {
+.menu-section .menu-container .menu-card .menu-select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,24 +323,30 @@ header .logo img {
           align-items: center;
   background: #99e2d0;
   cursor: pointer;
+  margin-right: -60px;
   width: 60px;
   opacity: 0;
   border-radius: 0 15px 15px 0;
+  -webkit-animation: slideout 300ms ease forwards;
+          animation: slideout 300ms ease forwards;
 }
 
-.menu-section .menu-container .menu-select:hover {
-  -webkit-animation: slidein 300ms linear;
-          animation: slidein 300ms linear;
-}
-
-.menu-section .menu-container .menu-select .check {
+.menu-section .menu-container .menu-card .check {
   font-size: 13px;
   color: #99e2d0;
   background: #fff;
   padding: 4px;
   border-radius: 100%;
-  -webkit-animation: check 500ms ease forwards;
-          animation: check 500ms ease forwards;
+}
+
+.menu-section .menu-container .menu-card:hover .menu-select {
+  -webkit-animation: slidein 300ms ease forwards;
+          animation: slidein 300ms ease forwards;
+}
+
+.menu-section .menu-container .menu-card:hover .check {
+  -webkit-animation: check 400ms linear forwards;
+          animation: check 400ms linear forwards;
 }
 
 @-webkit-keyframes slideup {
@@ -308,73 +375,14 @@ header .logo img {
   }
 }
 
-.menu-section .menu-container .menu-select .menu-card:nth-child(1n) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(2n) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(3n) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(4n) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(5n) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(6n) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(7n) {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(8n) {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(9n) {
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(10n) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(11n) {
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
-}
-
-.menu-section .menu-container .menu-select .menu-card:nth-child(12n) {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-}
-
 @-webkit-keyframes slidein {
   from {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
   to {
+    margin-right: 0px;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 100%);
             transform: translate3d(0, 0, 100%);
@@ -383,28 +391,57 @@ header .logo img {
 
 @keyframes slidein {
   from {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
   to {
+    margin-right: 0px;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 100%);
             transform: translate3d(0, 0, 100%);
   }
 }
 
+@-webkit-keyframes slideout {
+  from {
+    margin-right: 0px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 100%);
+            transform: translate3d(0, 0, 100%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-right: 0px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 100%);
+            transform: translate3d(0, 0, 100%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
 @-webkit-keyframes check {
   to {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes check {
   to {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -639,6 +676,7 @@ button {
 .heart-card:hover,
 .heart-menu:hover {
   -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 900;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
   background-image: linear-gradient(180deg, #e771da 0%, #a25bdc 100%);
