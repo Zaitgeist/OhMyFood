@@ -1,11 +1,17 @@
 button {
-    background: rgb(231,113,218);
-    background: linear-gradient(180deg, rgba(231,113,218,1) 0%, rgba(162,91,220,1) 100%);
+    background: #fff;
+    background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
     border-radius: 30px;
     border: 0;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
     color: #fff;
+
+    &:hover {
+        filter: brightness(105%);
+        box-shadow: 0px 5px 5px #c1c1c1;
+    }
 }
+

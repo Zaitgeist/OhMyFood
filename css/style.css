@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -12,12 +16,6 @@ a {
 
 h1 {
   font-family: shrikhand;
-}
-
-h2,
-h3,
-p {
-  font-family: roboto;
 }
 
 .loader {
@@ -42,8 +40,8 @@ p {
 .loader i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
-  background-image: linear-gradient(180deg, #e771da 0%, #a25bdc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
   font-size: 100px;
   -webkit-animation: spin 3s ease;
           animation: spin 3s ease;
@@ -74,6 +72,120 @@ p {
   to {
     -webkit-transform: rotate(720deg);
             transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  to {
+    margin-right: 0px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 100%);
+            transform: translate3d(0, 0, 100%);
+  }
+}
+
+@keyframes slidein {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  to {
+    margin-right: 0px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 100%);
+            transform: translate3d(0, 0, 100%);
+  }
+}
+
+@-webkit-keyframes slideout {
+  from {
+    margin-right: 0px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 60px);
+            transform: translate3d(0, 0, 60px);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(60px, 0, 0);
+            transform: translate3d(60px, 0, 0);
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-right: 0px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 60px);
+            transform: translate3d(0, 0, 60px);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(60px, 0, 0);
+            transform: translate3d(60px, 0, 0);
+  }
+}
+
+@-webkit-keyframes check {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes check {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -157,6 +269,91 @@ header .logo img {
   font-size: 15px;
   color: #000;
   font-weight: bolder;
+}
+
+.fonction-section {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.fonction-section .fonction-title {
+  padding: 30px 0 30px 20px;
+}
+
+.fonction-section .fonction-container .fonction-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.fonction-section .fonction-container .fonction-step .step-card {
+  max-width: 40%;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 20px 0px;
+  -webkit-box-shadow: 0 0 10px  #b8b5b5;
+          box-shadow: 0 0 10px  #b8b5b5;
+  background-color: #f6f6f6;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fonction-section .fonction-container .fonction-step .step-card .step-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: #9356dc;
+  margin-left: -15px;
+  color: #fff;
+}
+
+.fonction-section .fonction-container .fonction-step .step-card .step {
+  padding-right: 50px;
+}
+
+.fonction-section .fonction-container .fonction-step .step-card .step .fas {
+  font-size: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #7e7e7e;
+}
+
+.fonction-section .fonction-container .fonction-step .step-card:hover {
+  background-color: #f5edff;
+}
+
+.fonction-section .fonction-container .fonction-step .step-card:hover .fas {
+  color: #9356dc;
 }
 
 .menu-wrapper {
@@ -373,8 +570,8 @@ header .logo img {
   width: 60px;
   opacity: 0;
   border-radius: 0 15px 15px 0;
-  -webkit-animation: slideout 300ms ease forwards;
-          animation: slideout 300ms ease forwards;
+  -webkit-animation: slideout 400ms linear forwards;
+          animation: slideout 400ms linear forwards;
 }
 
 .menu-section .menu-container .menu-card .check {
@@ -397,102 +594,6 @@ header .logo img {
 
 .menu-section .menu-container .order-btn {
   margin: 30px 0 70px 0;
-}
-
-@-webkit-keyframes slideup {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 50%, 0);
-            transform: translate3d(0, 50%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideup {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 50%, 0);
-            transform: translate3d(0, 50%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes slidein {
-  from {
-    opacity: 1;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-  to {
-    margin-right: 0px;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 100%);
-            transform: translate3d(0, 0, 100%);
-  }
-}
-
-@keyframes slidein {
-  from {
-    opacity: 1;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-  to {
-    margin-right: 0px;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 100%);
-            transform: translate3d(0, 0, 100%);
-  }
-}
-
-@-webkit-keyframes slideout {
-  from {
-    margin-right: 0px;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 100%);
-            transform: translate3d(0, 0, 100%);
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-}
-
-@keyframes slideout {
-  from {
-    margin-right: 0px;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 100%);
-            transform: translate3d(0, 0, 100%);
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-}
-
-@-webkit-keyframes check {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes check {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .restaurant-section {
@@ -536,6 +637,19 @@ header .logo img {
   background-color: #fff;
 }
 
+.restaurant-section .restaurant-card-container .restaurant-card:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-box-shadow: 0px 10px 5px #c1c1c1;
+          box-shadow: 0px 10px 5px #c1c1c1;
+}
+
+.restaurant-section .restaurant-card-container .restaurant-card .restaurant-desc {
+  padding-left: 10px;
+  margin: 10px 0 15px 0;
+  gap: 5px;
+}
+
 .restaurant-section .restaurant-card-container .restaurant-card .restaurant-img img {
   height: 140px;
   width: 100%;
@@ -543,27 +657,23 @@ header .logo img {
      object-fit: cover;
 }
 
-.restaurant-section .restaurant-card-container .restaurant-card h3 {
-  padding-left: 10px;
-  margin: 5px 0 10px;
-}
-
-.restaurant-section .restaurant-card-container .restaurant-card p {
-  padding-left: 10px;
-  margin: 5px 0 10px;
-}
-
 button {
-  background: #e771da;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
-  background: linear-gradient(180deg, #e771da 0%, #a25bdc 100%);
+  background: #fff;
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
   border-radius: 30px;
   border: 0;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 400;
   cursor: pointer;
   color: #fff;
+}
+
+button:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-box-shadow: 0px 5px 5px #c1c1c1;
+          box-shadow: 0px 5px 5px #c1c1c1;
 }
 
 .footer {
@@ -612,96 +722,32 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 0;
-  gap: 20px;
   background-color: #f6f6f6;
 }
 
-.description-section h1 {
+.description-section .description-text {
+  max-width: 300px;
+}
+
+.description-section .description-text h1 {
   font-family: roboto;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.description-section p {
+.description-section .description-text p {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.fonction-section {
-  width: 50%;
-  margin-bottom: 50px;
-}
-
-.fonction-section .fonction-title {
-  padding: 30px 0 30px 20px;
-}
-
-.fonction-section .fonction-container .fonction-step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-
-.fonction-section .fonction-container .fonction-step .step-card {
-  max-width: 40%;
-  min-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 20px;
-  padding: 20px 0px;
-  -webkit-box-shadow: 0 0 10px  #b8b5b5;
-          box-shadow: 0 0 10px  #b8b5b5;
-  background-color: #f6f6f6;
-}
-
-.fonction-section .fonction-container .fonction-step .step-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 25px;
-  width: 25px;
-  border-radius: 100%;
-  background-color: #9356dc;
-  margin-left: -15px;
-}
-
-.fonction-section .fonction-container .fonction-step .step {
-  padding-right: 75px;
-}
-
-.fonction-section .fonction-container .fonction-step .step i {
-  padding-right: 25px;
-  color: #7e7e7e;
+.description-section .button {
+  margin-bottom: 20px;
 }
 
 .new {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -713,8 +759,12 @@ button {
   margin-top: 20px;
   height: 30px;
   width: 80px;
+  border-radius: 3px;
   background-color: #99e2d0;
   color: #1b9779;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .heart-card {
@@ -729,28 +779,15 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 900;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e771da), to(#a25bdc));
-  background-image: linear-gradient(180deg, #e771da 0%, #a25bdc 100%);
+  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
   -webkit-text-fill-color: transparent;
-  -webkit-animation: fill 1000ms ease-in forwards;
-          animation: fill 1000ms ease-in forwards;
+  -webkit-animation: fill 500ms ease-in forwards;
+          animation: fill 500ms ease-in forwards;
 }
 
-@-webkit-keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+@media all and (max-width: 749px) {
+  .description-section {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

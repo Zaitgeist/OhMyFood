@@ -24,6 +24,17 @@
         flex-direction: column;
         background-color: #fff;
 
+        &:hover{
+          filter: brightness(105%);
+          box-shadow: 0px 10px 5px #c1c1c1;
+        }
+
+        .restaurant-desc {
+          padding-left: 10px;
+          margin: 10px 0 15px 0;
+          gap: 5px;
+        }
+
         .restaurant-img {
           img {
             height: 140px;
@@ -31,16 +42,7 @@
             object-fit: cover;
           }
         }
-  
-        h3 {
-            padding-left: 10px;
-            margin: 5px 0 10px;
-        }
-  
-        p {
-            padding-left: 10px;
-            margin: 5px 0 10px;
-        }
       }
     }
   }
+  

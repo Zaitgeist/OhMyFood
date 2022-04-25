@@ -12,23 +12,9 @@
     i {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image : linear-gradient(180deg, rgba(231,113,218,1) 0%, rgba(162,91,220,1) 100%);
+      background-image : linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
       font-size: 100px;
       animation: spin 3s ease;
     }
   
-  }
-  
-  
-  @keyframes loader {
-    to {
-      z-index: -1;
-      opacity: 0;
-    }
-  }
-  
-  @keyframes spin {
-   to {
-     transform: rotate(720deg)
-   }
   }

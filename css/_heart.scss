@@ -1,25 +1,17 @@
+
 .heart-card {
     position: absolute;
     font-size: 25px;
     bottom: 30px;
     right: 20px;
   }
+
   .heart-card:hover,
   .heart-menu:hover  {
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: 900;
-    background-image: linear-gradient(180deg, rgba(231,113,218,1) 0%, rgba(162,91,220,1) 100%);
+    background-image: linear-gradient(200deg, $color-primary 0%, $color-secondary 100%);
     -webkit-text-fill-color: transparent;
-    animation: fill 1000ms ease-in forwards;
-  }
-
-  @keyframes fill {
-    0%{
-      opacity: 0;
-    }
-
-    100%{
-      opacity: 1;
-    }
+    animation: fill 500ms ease-in forwards;
   }
