@@ -1,13 +1,4 @@
-
-.heart-card {
-    position: absolute;
-    font-size: 25px;
-    bottom: 30px;
-    right: 20px;
-  }
-
-  .heart-card:hover,
-  .heart-menu:hover  {
+  .full:hover {
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: 900;

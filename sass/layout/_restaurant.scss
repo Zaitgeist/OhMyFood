@@ -11,6 +11,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding-bottom: 40px;
+    }
 
       .restaurant-card {
         position: relative;
@@ -42,7 +44,12 @@
             object-fit: cover;
           }
         }
+
+        .heart-card {
+          position: absolute;
+          font-size: 25px;
+          bottom: 30px;
+          right: 20px;
       }
     }
   }
-  

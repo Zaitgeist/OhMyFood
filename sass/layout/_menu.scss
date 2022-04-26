@@ -34,6 +34,7 @@
   }
 
   .heart-menu {
+  cursor: pointer;
   font-size: 20px;
   padding-right: 30px;
   }
@@ -70,6 +71,7 @@
       border-radius: 15px;
       box-shadow: 0 0 10px  #b8b5b5;
       background-color: #ffffff;
+      cursor: pointer;
       display: flex;
       opacity: 0;
       animation:slideup 1s;
@@ -77,7 +79,7 @@
       overflow: hidden;
       white-space: nowrap; 
       
-      @for $i from 1 through 12 {
+      @for $i from 1 through 13 {
         &:nth-child(#{$i}n) {
             animation-delay: #{$i * 0.2}s;
         }
@@ -119,7 +121,6 @@
     justify-content: center;
     align-items: center;
     background: $color-tertiary;
-    cursor: pointer;
     margin-right: -60px;
     width: 60px;
     opacity: 0;
