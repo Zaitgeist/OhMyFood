@@ -53,3 +53,9 @@
       }
     }
   }
+
+  @media all and (max-width: 700px) {
+    .restaurant-section .restaurant-card {
+        width: 100%;
+    }
+}
