@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 @-webkit-keyframes loader {
   to {
@@ -407,6 +407,12 @@ header .logo img {
   color: #9356dc;
 }
 
+@media all and (max-width: 749px) {
+  .fonction-section {
+    width: 100%;
+  }
+}
+
 .description-section {
   width: 50%;
   min-width: 375px;
@@ -433,6 +439,8 @@ header .logo img {
 
 .description-section .description-text h1 {
   font-family: roboto;
+  font-size: 30px;
+  font-weight: bolder;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -523,7 +531,7 @@ header .logo img {
 
 @media all and (max-width: 700px) {
   .restaurant-section .restaurant-card {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -713,7 +721,8 @@ header .logo img {
 }
 
 .menu-section .menu-container .menu-card .menu-details h3 {
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -770,6 +779,7 @@ header .logo img {
 }
 
 .menu-section .menu-container .order-btn {
+  padding: 15px 50px;
   margin: 30px 0 70px 0;
 }
 
